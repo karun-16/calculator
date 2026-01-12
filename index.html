@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+
+    <!-- TOP BAR -->
+    <div class="top">
+        <span id="modeText">Switch to Dark</span>
+        <div class="top-right">
+            <button id="historyBtn" title="History">🕘</button>
+            <label class="switch">
+                <input type="checkbox" id="themeToggle">
+                <span class="slider"></span>
+            </label>
+        </div>
+    </div>
+
+    <!-- DISPLAY -->
+    <div class="screen">
+        <div id="display">0</div>
+    </div>
+
+    <!-- HISTORY -->
+    <div id="history" class="history hidden"></div>
+
+    <!-- WINDOWS STANDARD BUTTON LAYOUT -->
+    <div class="buttons win-layout">
+
+        <!-- ROW 1 -->
+        <button data-action="percent" class="func">%</button>
+        <button data-action="clear" class="func">C</button>
+        <button data-action="backspace" class="func">⌫</button>
+        <button data-value="/" class="op">÷</button>
+
+        <!-- ROW 2 -->
+        <button data-value="7">7</button>
+        <button data-value="8">8</button>
+        <button data-value="9">9</button>
+        <button data-value="*" class="op">×</button>
+
+        <!-- ROW 3 -->
+        <button data-value="4">4</button>
+        <button data-value="5">5</button>
+        <button data-value="6">6</button>
+        <button data-value="-" class="op">−</button>
+
+        <!-- ROW 4 -->
+        <button data-value="1">1</button>
+        <button data-value="2">2</button>
+        <button data-value="3">3</button>
+        <button data-value="+" class="op">+</button>
+
+        <!-- ROW 5 -->
+        <button data-value="0" class="zero">0</button>
+        <button data-value=".">.</button>
+        <button data-action="equals" class="equals">=</button>
+
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
